@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+
+        <item name="android:textColor">#d6d6c2</item>
+
+    </style>
+
+    <style name="ToolbarStyle" parent="Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:color">@color/colorPrimary</item>
+    </style>
+
+
+
+
+
+
+</resources>

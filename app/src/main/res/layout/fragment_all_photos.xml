@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nikhilverma360.wallpaperapp.AllPhotosFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_msg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/no_internet_only"
+        android:textSize="25sp" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

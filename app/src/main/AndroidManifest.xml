@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nikhilverma360.wallpaperapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:installLocation="preferExternal"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.nikhilverma360.wallpaperapp.MainActivity">
+        </activity>
+        <activity
+            android:name="com.nikhilverma360.wallpaperapp.DetailPhotoCategoriesActivity"
+            android:label="Detail"
+            android:parentActivityName="com.nikhilverma360.wallpaperapp.MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity android:name="com.nikhilverma360.wallpaperapp.FullImageActivity" />
+        <activity
+            android:name="com.nikhilverma360.wallpaperapp.AboutActivity"
+            android:label="About Developer">
+        </activity>
+        <activity android:name="com.nikhilverma360.wallpaperapp.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
