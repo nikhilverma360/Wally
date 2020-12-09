@@ -28,4 +28,4 @@
 * [Android Rate](https://github.com/hotchemi/Android-Rate)
 
 
-#### Coontributions Are Welcome
+#### Contributions Are Welcome
